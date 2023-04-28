@@ -15,11 +15,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/user", user);
 
 app.use("/", (req, res) => {
-    return res.status(404).json({ message: "page not found" });
+    return res.send("<h1>Page not found</h1>");
 });
 
 db.sequelize.sync().then((req) => {
     app.listen(3000, () => {
-        console.log("Server listening on https://test-sequelize-production.up.railway.app/");
+        console.log("localhost");
     });
 });
