@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "jlf7l766uqyor9e1clmw",
+    "password": "pscale_pw_tBWU27OJxlK0hdc0xkgq43IvgCHSj6yftLhpuVs0qj7",
+    "database": "mumr",
+    "host": "aws.connect.psdb.cloud",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": true
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
