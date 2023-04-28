@@ -19,7 +19,7 @@ app.use("/", (req, res) => {
 });
 
 db.sequelize.sync().then((req) => {
-    app.listen(3001, () => {
+    app.listen(3000, () => {
         console.log("Server listening on https://test-sequelize-production.up.railway.app/");
     });
 });
